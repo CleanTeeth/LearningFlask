@@ -1,0 +1,24 @@
+{% extends "template.html" %}
+
+{% block title %}
+    login
+{% endblock %}
+
+{% block login %}
+    <form action="{{ url_for('login') }}" method="POST">
+        email:
+        <input type="text" name="email">
+        <br><br>
+        password:
+        <input type="password" name="password">
+        <br><br>
+        <input type="submit" value="Log in">
+    </form>
+
+    <br>
+    <br>
+
+    {% if error %}
+        {{error}}
+    {% endif %}
+{% endblock %}

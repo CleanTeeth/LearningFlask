@@ -1,0 +1,14 @@
+{% extends "template.html" %}
+
+{% block title %}
+	index
+{% endblock %}
+
+{% block index %}
+    <form action="{{ url_for('index') }}" method="POST">
+        email:
+        <input type="text" name="email">
+        <br><br>
+        <input type="submit" value="Log in">
+    </form>
+{% endblock %}

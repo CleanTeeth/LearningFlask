@@ -1,0 +1,12 @@
+{% extends "template.html" %}
+
+{% block title %}
+    login
+{% endblock %}
+
+{% block success %}
+    Now u can log in<br><br>
+
+    <a href="{{ url_for('login') }}">Log in here</a>
+
+{% endblock %}

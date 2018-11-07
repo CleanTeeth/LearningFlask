@@ -1,0 +1,11 @@
+{% extends "template.html" %}
+
+{% block title %}
+	existing_email
+{% endblock %}
+
+{% block existing_email %}
+    We have this email or username in our database...
+
+    <a href="{{ url_for('register') }}">Take me back</a>
+{% endblock %}
