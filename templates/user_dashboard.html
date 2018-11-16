@@ -1,0 +1,11 @@
+{% extends "template.html" %}
+
+{% block title %}
+	User dashboard
+{% endblock %}
+
+{% block user_dashboard %}
+        <h1>This is {{ username }} balance {{ balance }}</h1>
+        <br>
+        <a href="{{ url_for('logout') }}">Log out here!</a>
+{% endblock %}

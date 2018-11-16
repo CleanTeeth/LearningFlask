@@ -1,0 +1,13 @@
+{% extends "template.html" %}
+
+{% block title %}
+    index test
+{% endblock %}
+
+{% block index_test %}
+
+    {{ balance }}
+    <br>
+    <a href="{{ url_for('index') }}">Go back!</a>
+
+{% endblock %}
